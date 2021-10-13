@@ -3,38 +3,50 @@
         <h1>Categoria</h1>
     </div>
 </div>
-
-<form class="col-s-12" action="">
+<div class="col-s-12">
+    <form (ngSubmit)="agregar()" action="">
     
-    <div class="col-s-6">
-        <label for="nombre">Nombre</label>
-        <input type="text" 
-        id="nombre" 
-        placeholder="Nombre" 
-        name="nombrecategoria"
+        <div class="col-s-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" 
+            id="nombreCategoria" 
+            placeholder="Nombre" 
+            name="nombrecategoria"
+            [(ngModel)]="nombreCategoria"
+            >
+        </div>
+        <div class="col-s-3 boton">
+            <button type="summit">Agregar</button>
+    
+        </div>
+    </form>
+    <form (ngSubmit)="eliminar()" action="">
+        <div class="col-s-3 boton">
+
+            <button type="submit" class="extra">Eliminar</button>
+        </div>
+        <div class="cajat col-s-12">
+    
+            <table class="col-s-12">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Seleccion</th>
+                </tr>
+            
+                <tr *ngFor="let categoria of categorias,let i=index">
+                    <td>{{categoria.getnombreCategoria()}}</td>
+                    <td>{{categoria.getcodCategoria()}}</td>
+                    <td><input type="checkbox" (click)="eliminacion.unshift(i)"></td>
+                </tr>
+            
+            
+            </table>
         
-        >
-    </div>
-    <div class="col-s-6 boton">
-        <button type="summit">Agregar</button>
-        <button class="extra">Eliminar</button>
-    </div>
-</form>
-
-<div class="cajat col-s-12">
-
-    <table class="col-s-12">
-        <tr>
-            <th>Codigo</th>
-            <th>Nombre</th>
-        </tr>
-    
-        <tr>
-            <td>SDGDSGDSDGS</td>
-            <td>asdasd</td>
-        </tr>
-    
-    
-    </table>
-
+        </div>
+    </form>
+   
 </div>
+
+    
+

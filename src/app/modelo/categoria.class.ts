@@ -1,3 +1,4 @@
+
 export class Categoria{
     constructor(
         private codCategoria:String,
@@ -5,6 +6,12 @@ export class Categoria{
     ){}
     getnombreCategoria(){
         return this.nombreCategoria
+    }
+    setnombrecategoria(nombreCategoria:String){
+        this.nombreCategoria=nombreCategoria;
+    }
+    getcodCategoria(){
+        return this.codCategoria
     }
 }
 const ron =new Categoria("C001","Ron");

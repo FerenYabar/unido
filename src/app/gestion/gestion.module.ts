@@ -4,6 +4,7 @@ import { GestionCategoriaMainComponent } from './gestion-categoria-main/gestion-
 import { GestionProductoMainComponent } from './gestion-producto-main/gestion-producto-main.component';
 import { GestionMarcaMainComponent } from './gestion-marca-main/gestion-marca-main.component';
 import { GestionProveedorMainComponent } from './gestion-proveedor-main/gestion-proveedor-main.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,7 +13,8 @@ import { GestionProveedorMainComponent } from './gestion-proveedor-main/gestion-
     GestionCategoriaMainComponent,
     GestionProductoMainComponent,
     GestionMarcaMainComponent,
-    GestionProveedorMainComponent
+    GestionProveedorMainComponent,
+    
   ],
   exports:[
     GestionCategoriaMainComponent,
@@ -21,7 +23,7 @@ import { GestionProveedorMainComponent } from './gestion-proveedor-main/gestion-
     GestionProveedorMainComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,FormsModule
   ]
 })
 export class GestionModule { }
