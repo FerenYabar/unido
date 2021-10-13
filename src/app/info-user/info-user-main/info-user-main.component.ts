@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario, usuarios } from 'src/app/modelo/usuario.class';
+
 
 @Component({
   selector: 'app-info-user-main',
@@ -11,5 +13,7 @@ export class InfoUserMainComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  usuarios: Usuario[] = usuarios;
 
 }

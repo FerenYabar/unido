@@ -12,6 +12,29 @@ export class Usuario{
     getnombreUsuario(){
         return this.NombreUsuario
     }
+    getdniUsuario(){
+        return this.dniUsuario
+    }
+    getApellidoUsuario(){
+        return this.ApellidoUsuario
+    }
+    getusuariousuario(){
+        return this.Usuario
+    }
+    getconstraseñaUsuario(){
+        return this.Contraseña
+    }
+    getcelularUsuario(){
+        return this.Celular;
+    }
+    getCorreoUsuario(){
+        return this.Correo
+    }
+    getDireccionUsuario(){
+        return this.Dirección
+    }
+    
+
         
 }
 const usuario01=new Usuario("12457896","Josept","Ccoyore","jose123","123","954123678","jose@hotmail.com","Urb. Magisterio segunda etapa")

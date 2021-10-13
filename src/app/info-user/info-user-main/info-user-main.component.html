@@ -9,15 +9,17 @@
         <div class="col-s-12 col-m-6" >
             <div class="info" >
                 <h1>Usuario</h1>
-                <p>Pedrito Manuelito</p>
+                <p>{{ usuarios[0].getusuariousuario() }}</p>
+                <h1>Nombres y Apellidos</h1>
+                <p>{{ usuarios[0].getnombreUsuario()}}  {{usuarios[0].getApellidoUsuario() }}</p>
                 <h1>Direccion</h1>
-                <p>Calle. Sacarias Polvo</p>
+                <p>{{ usuarios[0].getDireccionUsuario() }}</p>
                 <h1>DNI</h1>
-                <p>72316452</p>
+                <p>{{ usuarios[0].getdniUsuario() }}</p>
                 <h1>Numero de Contacto</h1>
-                <p>999912322</p>
+                <p>{{ usuarios[0].getcelularUsuario() }}</p>
                 <h1>Correo Electronico</h1>
-                <p>pedriotomanuelito123@gmail.com</p>
+                <p>{{ usuarios[0].getCorreoUsuario() }}</p>
             </div>
         </div>
 
