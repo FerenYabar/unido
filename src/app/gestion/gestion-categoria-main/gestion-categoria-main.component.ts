@@ -22,10 +22,11 @@ export class GestionCategoriaMainComponent implements OnInit {
   eliminacion:number[]=[]
   
   eliminar(){
-    console.log("gola")
     for(let i:number=0;this.eliminacion.length>i;i++){
       this.categorias.splice(this.eliminacion[i],1)
+      
     }
+    this.eliminacion=[]
    
   }
   
