@@ -1,0 +1,18 @@
+<div class="col-s-12">
+    <div class="caja1">
+        <table class="col-s-12">
+            <tr *ngFor="let reserva of reservasnoEntregado;let i=index">
+                <td class="col-s-10 pedido">{{reserva.getusuarioreserva().getnombreUsuario()}}</td>
+                <td class="col-s-2 entrega"><button (click)="entregado(i)">Entrega</button></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 >Pedidos Entregados</h2>
+        <table class="col-s-12">
+            <tr *ngFor="let reserva of reservasEntregado">
+                <td class="col-s-10 pedido">{{reserva.getusuarioreserva().getnombreUsuario()}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

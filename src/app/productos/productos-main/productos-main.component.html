@@ -1,0 +1,29 @@
+
+        <div class="col-s-12">
+            <div class="titulo">
+                <h1>RON</h1>
+            </div>
+        </div>
+
+        <div class="col-s-12 content">
+            <div class="galeria">
+
+                <div *ngFor="let productolocal1 of productoslocal" class="col-s-6 col-m-4 fotos">
+                    
+                    <img src={{productolocal1.producto.getimagenproducto()}} alt="">
+                        <div class="infor">
+                            <h1>{{productolocal1.producto.getnombreproducto()}}</h1>
+                            <p>{{productolocal1.producto.getdescripcionproducto()}}</p>
+                            <h2>{{productolocal1.getprecioproductolocal()}}</h2>
+                        </div>
+                        <div class="boton">
+                            <ul>
+                                <li><a href="#">Carrito</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+                
+
+            </div>
+        </div>
