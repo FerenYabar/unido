@@ -17,7 +17,7 @@ export class GestionCategoriaMainComponent implements OnInit {
   agregar(){
     const nuevoCategoria:Categoria=new Categoria("C0"+(categorias.length+1),this.nombreCategoria)
     categorias.push(nuevoCategoria);
-    console.log(nuevoCategoria)
+    
   }
   eliminacion:number[]=[]
   

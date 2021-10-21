@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { categorias, Categoria } from '../../modelo/categoria.class';
+
 
 
 @Component({

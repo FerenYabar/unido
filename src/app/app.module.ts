@@ -7,7 +7,7 @@ import { CodigoQrModule } from './codigo-qr/codigo-qr.module';
 import { InfoUserModule } from './info-user/info-user.module';
 import { ProductosModule } from './productos/productos.module';
 import { ReversaModule } from './reversa/reversa.module';
-import { UbicacionModule } from './ubicacion/ubicacion.module';
+
 import { CategoriaModule } from './categoria/categoria.module';
 import { DescripcionBoletaModule } from './descripcion-boleta/descripcion-boleta.module';
 import { RegistroUsuarioModule } from './registro-usuario/registro-usuario.module';
@@ -30,7 +30,6 @@ import { GestionDistribuidorModule } from './gestion-distribuidor/gestion-distri
     InfoUserModule,
     ProductosModule,
     ReversaModule,
-    UbicacionModule,
     CategoriaModule,
     DescripcionBoletaModule,
     RegistroUsuarioModule,

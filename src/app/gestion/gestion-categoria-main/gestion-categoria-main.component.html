@@ -35,12 +35,12 @@
                 </tr>
             
                 <tr *ngFor="let categoria of categorias,let i=index">
-                    <td>{{categoria.getnombreCategoria()}}</td>
                     <td>{{categoria.getcodCategoria()}}</td>
+                    <td>{{categoria.getnombreCategoria()}}</td>
                     <td><input type="checkbox" (click)="eliminacion.unshift(i)"></td>
                 </tr>
             
-            
+                
             </table>
         
         </div>
