@@ -6,8 +6,21 @@ export class Local{
         private rucLocal:String,
         private contraseña:String
     ){
-
-
+    }
+    public get getcodLocal():String{
+        return this.codLocal
+    }
+    public get getnombreLocal():String{
+        return this.nombreLocal
+    }
+    public get getubicacionLocal():String{
+        return this.ubicacionLocal
+    }
+    public get getrucLocal():String{
+        return this.rucLocal
+    }
+    public get getcontraseña():String{
+        return this.contraseña
     }
 }
 const local01=new Local("L0001","Borrachos","Urb. Magsiterio segunda etapa","15487236","159")

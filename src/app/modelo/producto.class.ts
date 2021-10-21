@@ -4,24 +4,39 @@ import { Categoria, categorias } from './categoria.class';
 export class Producto{
     constructor(
         private codProducto:String,
-        private nombreProducto:string,
+        private nombreProducto:String,
         private mililitrosProducto:number,
         private descripcionProducto:String,
         private volalcoholProducto:number,
         private imagenProducto:String,
         private marcaProducto:Marca,
-        private CategoriaProducto:Categoria,
+        private categoriaProducto:Categoria,
     ){
         
     }
-    getnombreproducto():String{
+    get getnombreproducto():String{
         return this.nombreProducto
     }
-    getimagenproducto():String{
+    get getimagenproducto():String{
         return this.imagenProducto
     }
-    getdescripcionproducto():String{
+    get getdescripcionproducto():String{
         return this.descripcionProducto
+    }
+    get getcodproducto():String{
+        return this.codProducto
+    }
+    get getmililitrosproducto():number{
+        return this.mililitrosProducto
+    }
+    get getvoalcoholProducto():number{
+        return this.volalcoholProducto
+    }
+    get getmarcaproducto():Marca{
+        return this.marcaProducto
+    }
+    get getcategoriaproducto():Categoria{
+        return this.categoriaProducto
     }
 }
 const producto01 =new Producto("P0001","Black",1000,"Ron cartabio Black",27,"../../../assets/img/licor1.jpg",marcas[0],categorias[0])
