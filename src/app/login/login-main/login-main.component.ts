@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Usuario, usuarios } from '../../modelo/usuario.class';
+import { LoginService } from './services/login.service';
 
 @Component({
   selector: 'app-login-main',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginMainComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private LoginService:LoginService) {}
   ngOnInit(): void {
   }
 
+  get loginserices(){
+    return this.LoginService
+  }
+
+  
 }
+
+
+
+

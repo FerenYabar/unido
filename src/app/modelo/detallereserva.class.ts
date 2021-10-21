@@ -10,13 +10,17 @@ export class DetalleReserva{
     ){
 
     }
-    getReservas(){
+    get getcodDetalleReserva(){
+        return this.codDetalleReserva
+    }
+
+    get getReservas(){
         return this.reservaDetalleReserva
     }
-    getproductoDetalleReserva(){
+    get getproductoDetalleReserva(){
         return this.productolocalDetalleReserva
     }
-    getcantiaddDEtalleReserva(){
+    get getcantiaddDEtalleReserva(){
         return this.cantidadDetalleReserva
     }
 

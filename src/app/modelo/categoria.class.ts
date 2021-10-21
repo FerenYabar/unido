@@ -4,13 +4,13 @@ export class Categoria{
         private codCategoria:String,
         private nombreCategoria:String
     ){}
-    getnombreCategoria(){
+    get getnombreCategoria(){
         return this.nombreCategoria
     }
-    setnombrecategoria(nombreCategoria:String){
+    set setnombrecategoria(nombreCategoria:String){
         this.nombreCategoria=nombreCategoria;
     }
-    getcodCategoria(){
+    get getcodCategoria(){
         return this.codCategoria
     }
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EntregaPedidosMainComponent } from './entrega-pedidos-main/entrega-pedidos-main.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,7 +13,9 @@ import { EntregaPedidosMainComponent } from './entrega-pedidos-main/entrega-pedi
     EntregaPedidosMainComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
+  
 })
 export class EntregaPedidosModule { }

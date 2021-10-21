@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DetalleReserva, detallesreservas } from '../../modelo/detallereserva.class';
+import { descripcionboletaService } from '../services/descripcion-boleta.service';
 
 
 @Component({
@@ -10,12 +11,13 @@ import { DetalleReserva, detallesreservas } from '../../modelo/detallereserva.cl
 })
 export class DescripcionBoletaMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public descripcionboletaService: descripcionboletaService
+  ) { }
 
   ngOnInit(): void {
   }
-  detallesreservas:DetalleReserva[]=detallesreservas
-  productos= this.detallesreservas.filter(elemen => elemen.getReservas().getcodReserva()=="R0001");
+  
 
   
 

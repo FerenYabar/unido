@@ -14,6 +14,8 @@ import { RegistroUsuarioModule } from './registro-usuario/registro-usuario.modul
 import { EntregaPedidosModule } from './entrega-pedidos/entrega-pedidos.module';
 import { GestionModule } from './gestion/gestion.module';
 import { GestionDistribuidorModule } from './gestion-distribuidor/gestion-distribuidor.module';
+import { CommonVistaModule } from './common-vista/common-vista.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { GestionDistribuidorModule } from './gestion-distribuidor/gestion-distri
   // ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     LoginModule,
     CodigoQrModule,
     InfoUserModule,
@@ -37,8 +40,11 @@ import { GestionDistribuidorModule } from './gestion-distribuidor/gestion-distri
     EntregaPedidosModule,
     GestionModule,
     GestionDistribuidorModule,
+    CommonVistaModule,
   ],
-  providers: [],
+  // providers: [
+
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

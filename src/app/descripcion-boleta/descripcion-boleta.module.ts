@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DescripcionBoletaMainComponent } from './descripcion-boleta-main/descripcion-boleta-main.component';
+import { descripcionboletaService } from './services/descripcion-boleta.service';
 
 
 
@@ -13,6 +14,9 @@ import { DescripcionBoletaMainComponent } from './descripcion-boleta-main/descri
   ],
   imports: [
     CommonModule
+  ],
+  providers:[
+    descripcionboletaService
   ]
 })
 export class DescripcionBoletaModule { }

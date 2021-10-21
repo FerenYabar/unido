@@ -1,0 +1,28 @@
+<div class="col-s-12 ">
+    <div class="header" >
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img id="logo" src="../../../assets/img/logo2.svg" alt="logo">
+            </a>
+            <a routerLink='reserva' class="carro">
+                <img src="../../../assets/img/carro.svg" alt="carrito">
+            </a>
+            <ul>
+                <li><a routerLink='' class="active">Bebidas</a></li>
+                <div *ngIf={{cuentaactiva==[]}}>
+                </div>
+                <li><a routerLink='info-user'>Mi perfil</a></li>
+                <li><a routerLink='entrega-pedidos'>Reservas</a></li>
+                <li><a href="#">Gestion</a></li>
+                <li><a href="#">Cerrar Sesion</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+    </div>
+</div>

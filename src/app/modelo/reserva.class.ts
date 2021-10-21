@@ -11,14 +11,20 @@ export class Reserva{
     ){
 
     }
-    getusuarioreserva(){
+    get getfechaReserva(){
+        return this.fechaReserva
+    }
+    get getusuarioreserva(){
         return this.usuarioReserva
     }
-    getestadoreserva(){
+    get getestadoreserva(){
         return this.estadoReserva
     }
-    getcodReserva():String{
+    get getcodReserva():String{
         return this.codReserva
+    }
+    get getlocalReserva(){
+        return this.localReserva
     }
     
 

@@ -1,42 +1,8 @@
 *{
     box-sizing: border-box;
 }
-
 .container{
     background: rgb(119,72,209);
     background: linear-gradient(118deg, rgba(119,72,209,1) 0%, rgba(12,5,26,1) 58%, rgba(12,5,26,1) 100%);
     margin: 0;
-}
-
-#logo{
-    width: 100px;
-}
-
-.carmen{
-    width: 40px;
-    float: right;
-    margin-left: 20px;
-}
-
-.header{
-    padding: 20px;
-    background-image: linear-gradient(to top left, #8E70C8,#391680);
-    border-bottom: 3px solid black;
-}
-
-#time{
-    color: #F82D97;
-}
-
-footer{
-    display: inline-block;
-    text-align: center;
-    padding: 20px;
-    background-color: black;
-}
-
-footer p{
-    color: white;
-    display: inline-block;
-
 }

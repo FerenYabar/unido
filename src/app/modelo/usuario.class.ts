@@ -9,28 +9,28 @@ export class Usuario{
         private Correo:String,
         private Dirección:String,
     ){}
-    getnombreUsuario(){
+    get getnombreUsuario(){
         return this.NombreUsuario
     }
-    getdniUsuario(){
+    get getdniUsuario(){
         return this.dniUsuario
     }
-    getApellidoUsuario(){
+    get getApellidoUsuario(){
         return this.ApellidoUsuario
     }
-    getusuariousuario(){
+    get getusuariousuario(){
         return this.Usuario
     }
-    getconstraseñaUsuario(){
+    get getconstraseñaUsuario(){
         return this.Contraseña
     }
-    getcelularUsuario(){
+    get getcelularUsuario(){
         return this.Celular;
     }
-    getCorreoUsuario(){
+    get getCorreoUsuario(){
         return this.Correo
     }
-    getDireccionUsuario(){
+    get getDireccionUsuario(){
         return this.Dirección
     }
     
