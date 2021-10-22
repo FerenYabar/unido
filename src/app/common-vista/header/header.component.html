@@ -5,7 +5,7 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="#" class="enlace">
+            <a href="" class="enlace">
                 <img id="logo" src="../../../assets/img/logo2.svg" alt="logo">
             </a>
             <a routerLink='reserva' class="carro">
@@ -13,10 +13,11 @@
             </a>
             <ul>
                 <li><a routerLink='' class="active">Bebidas</a></li>
-                <li><a routerLink='info-user'>Mi perfil</a></li>
-                <li><a routerLink='entrega-pedidos'>Reservas</a></li>
-                <li><a href="#">Gestion</a></li>
-                <li><a href="#">Cerrar Sesion</a></li>      
+                <li><a *ngIf="cuentaactiva[2]=='0'|| cuentaactiva[2]=='1'" routerLink='info-user'>Mi perfil</a></li>
+                <li><a *ngIf="cuentaactiva[2]=='0'|| cuentaactiva[2]=='1'" routerLink='entrega-pedidos'>Reservas</a></li>
+                <li><a *ngIf="cuentaactiva[2]=='2'|| cuentaactiva[2]=='1'"href="#">Gestion</a></li>
+                <li><a *ngIf="cuentaactiva.length!=0">Cerrar Sesion</a></li>  
+                <li><a *ngIf="cuentaactiva.length==0" routerLink='login'>Iniciar Secion</a></li>  
             </ul>
         </nav>
     </div>

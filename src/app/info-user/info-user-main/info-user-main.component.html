@@ -6,22 +6,34 @@
             </div>
         </div>
 
-        <div class="col-s-12 col-m-6" >
-            <div class="info" >
+        <div class="col-s-12 col-m-6 " *ngIf="cuentaactiva[2]=='0'">
+            <div class="info" *ngIf="usuario">
                 <h1>Usuario</h1>
-                <p>{{ usuarios[0].getusuariousuario }}</p>
+                <p>{{ usuario.getusuariousuario}}</p>
                 <h1>Nombres y Apellidos</h1>
-                <p>{{ usuarios[0].getnombreUsuario}}  {{usuarios[0].getApellidoUsuario }}</p>
+                <p>{{ usuario.getnombreUsuario}}  {{usuario.getApellidoUsuario }}</p>
                 <h1>Direccion</h1>
-                <p>{{ usuarios[0].getDireccionUsuario }}</p>
+                <p>{{ usuario.getDireccionUsuario }}</p>
                 <h1>DNI</h1>
-                <p>{{ usuarios[0].getdniUsuario }}</p>
+                <p>{{ usuario.getdniUsuario }}</p>
                 <h1>Numero de Contacto</h1>
-                <p>{{ usuarios[0].getcelularUsuario }}</p>
+                <p>{{ usuario.getcelularUsuario }}</p>
                 <h1>Correo Electronico</h1>
-                <p>{{ usuarios[0].getCorreoUsuario }}</p>
+                <p>{{ usuario.getCorreoUsuario }}</p>
             </div>
         </div>
+        <div *ngIf="cuentaactiva[2]=='1'">
+            <div class="info" >
+                <h1>COdigo Local</h1>
+                <p>{{local.getcodLocal}}</p>
+                <h1>Nombre Local</h1>
+                <p>{{ local.getnombreLocal}}  </p>
+                <h1>RUC</h1>
+                <p>{{ local.getrucLocal}}</p>
+                <h1>ubicacion</h1>
+                <p>{{ local.getubicacionLocal }}</p>
+            </div>
+          </div>
 
         <div class="col-s-12">
             <div class="tabla">

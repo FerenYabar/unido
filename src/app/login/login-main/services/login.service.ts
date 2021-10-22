@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { usuarios, Usuario } from 'src/app/modelo/usuario.class';
 import { Router } from '@angular/router';
-import { locales } from '../../../modelo/local.class';
+import { locales, Local } from '../../../modelo/local.class';
+import { elementEventFullName } from '@angular/compiler/src/view_compiler/view_compiler';
 
 
 @Injectable({
@@ -10,21 +11,28 @@ import { locales } from '../../../modelo/local.class';
 export class LoginService {
 
   constructor(private route:Router) { }
-  Usuario:String=''
-  Contrasena:String=''
-  
+  Usuario:string=''
+  Contrasena:string=''
+  pisicion:number=0
   
 
-  Validacion(usuario:String,contrasena:String):Boolean{
-    if(usuarios.filter(elemen => (elemen.getusuariousuario==usuario && elemen.getconstraseñaUsuario==contrasena)).length!=0){
-      cuenta=[usuario,contrasena,'0']
+  Validacion(usuario:string,contrasena:string):Boolean{
+    const usuarioexistente:Usuario[]=usuarios.filter(elemen => (elemen.getusuariousuario==usuario && elemen.getconstraseñaUsuario==contrasena))
+    
+    if(usuarioexistente.length!=0){
+      cuenta.push(usuario,contrasena,"0" )
+      usuarioactivo.push(usuarioexistente[0])
       return true
     }
-    if (locales.filter(elemen => (elemen.getrucLocal==usuario && elemen.getcontraseña==contrasena)).length!=0) {
-      cuenta=[usuario,contrasena,'1']
+    const localexistente:Local[]=locales.filter(elemen => (elemen.getrucLocal==usuario && elemen.getcontraseña==contrasena))
+    if (localexistente.length!=0 ) {
+      cuenta.push(usuario,contrasena,"1")
+      localactivo.push(localexistente[0])
       return true
-    } if(usuario=='admin' && contrasena=='123') {
-      cuenta=[usuario,contrasena,'2']
+    
+    } 
+    if(usuario=='admin' && contrasena=='123') {
+      cuenta.push(usuario,contrasena,"2")
       return true
     }
     else{
@@ -41,4 +49,7 @@ export class LoginService {
     }
   }
 }
-export let cuenta:String[]=[]
+export const cuenta:String[]=[]
+export const usuarioactivo:Usuario[]=[]
+export const localactivo:Local[]=[]
+
