@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { cuenta } from '../../login/login-main/services/login.service';
+import { cuenta, usuarioactivo } from '../../login/login-main/services/login.service';
 
 
 @Component({
@@ -17,7 +17,11 @@ export class HeaderComponent implements OnInit{
 
   ngOnInit(): void {
   }
-
+  borrar(){
+    console.log(usuarioactivo[0])
+    usuarioactivo.splice(0,1)
+    console.log(usuarioactivo[0])
+  }
  
   
   

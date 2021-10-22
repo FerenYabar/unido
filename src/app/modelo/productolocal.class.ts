@@ -31,6 +31,7 @@ const productolocal07=new ProductoLocal("PL0001",21,locales[0],productos[6])
 const productolocal08=new ProductoLocal("PL0001",22,locales[1],productos[7])
 const productolocal09=new ProductoLocal("PL0001",23,locales[0],productos[8])
 
+
 export const productoslocal:ProductoLocal[]=[
     productolocal01,productolocal02,productolocal03,productolocal04,productolocal05,productolocal06,productolocal07,productolocal08,productolocal09
 ]
